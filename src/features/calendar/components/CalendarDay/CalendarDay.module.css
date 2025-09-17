@@ -1,0 +1,86 @@
+.day {
+  height: 100px;
+  padding: 5px;
+  text-align: right;
+  border-radius: var(--radius);
+  position: relative;
+  background-color: var(--color-muted);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.day:hover {
+  background-color: var(--color-secondary);
+}
+
+.day.currentMonth {
+  background-color: var(--color-card);
+  color: var(--color-foreground);
+}
+
+.day.today {
+  background-color: var(--color-accent);
+  font-weight: bold;
+  color: var(--color-accent-foreground);
+}
+
+.day.selected {
+  background-color: var(--color-secondary);
+  border: 2px solid var(--color-primary);
+}
+
+.dayNumber {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.eventIndicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.eventList {
+  font-size: 11px;
+  text-align: left;
+  margin-top: 5px;
+  overflow: hidden;
+  max-height: 65px;
+}
+
+.eventItem {
+  padding: 2px 4px;
+  margin-bottom: 2px;
+  border-radius: calc(var(--radius) / 2);
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-foreground);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .day {
+    height: 80px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .day {
+    height: 60px;
+  }
+
+  .eventList {
+    display: none;
+  }
+
+  .dayNumber {
+    font-size: 12px;
+  }
+}

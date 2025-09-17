@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--color-primary-foreground);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.navButton:hover {
+  background-color: color-mix(in srgb, var(--color-primary-foreground) 20%, transparent);
+}
+
+.title {
+  color: var(--color-primary-foreground) !important;
+  margin: 0;
+}

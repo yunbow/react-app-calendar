@@ -1,0 +1,44 @@
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color-input);
+  border-radius: var(--radius);
+  font-size: 16px;
+  font-family: var(--font-sans);
+  transition: border-color 0.3s;
+  background-color: var(--color-card);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-ring);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-ring) 20%, transparent);
+}
+
+.input.error {
+  border-color: var(--color-destructive);
+}
+
+.input.error:focus {
+  border-color: var(--color-destructive);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-destructive) 20%, transparent);
+}
+
+.errorMessage {
+  display: block;
+  margin-top: 5px;
+  color: var(--color-destructive);
+  font-size: 14px;
+}

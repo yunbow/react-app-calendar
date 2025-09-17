@@ -1,0 +1,43 @@
+.text {
+  margin: 0;
+  font-family: var(--font-sans);
+}
+
+/* Variants */
+.h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.body {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.caption {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Colors */
+.primary {
+  color: var(--color-foreground);
+}
+
+.secondary {
+  color: var(--color-primary);
+}
+
+.muted {
+  color: var(--color-muted-foreground);
+}
